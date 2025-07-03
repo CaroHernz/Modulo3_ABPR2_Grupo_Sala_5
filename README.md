@@ -1,6 +1,6 @@
-# VerdeModa - Sitio Web de Ropa Sustentable
+# Te lo Vendo - Sitio Web Marketplace 
 
-Un sitio web responsivo para una tienda de ropa ecológica, desarrollado con metodología BEM y arquitectura CSS modular.
+Un sitio web responsivo para una empresa de ventas online , desarrollado con metodología BEM y arquitectura CSS modular.
 
 ## 🌟 Características Principales
 
@@ -23,16 +23,15 @@ Un sitio web responsivo para una tienda de ropa ecológica, desarrollado con met
 
 ```
 /
-├── index.html              # Archivo HTML principal
+├── index.html             # Archivo HTML principal
+|-- aboutus.html           # Página de información
 ├── assets/
-│   ├── css/
-│   │   ├──  
-│   │   │__variables.css   # Variables CSS
-│   │   └── style.css      # Archivo principal
+│   ├── css/   
+│   │   └── style.css      # Archivo de estilos
 │   ├── img/               # Imágenes del proyecto
 │   ├── js/                # Scripts JavaScript
 │   └── scss/              # Archivos SCSS 
-|       ├── style.css      
+|       ├── style.scss     # Archivo principal SCSS 
 │    
 └── README.md              # Este archivo
 ```
@@ -49,26 +48,27 @@ Un sitio web responsivo para una tienda de ropa ecológica, desarrollado con met
 ### Ejemplos de Nomenclatura BEM
 ```css
 /* Bloque */
-.product-card { }
+{ }
 
 /* Elemento */
-.product-card__image { }
-.product-card__title { }
+{ }
+{ }
 
 /* Modificador */
-.btn--primary { }
-.btn--secondary { }
+{ }
+{ }
 ```
 
 ## 🎨 Sistema de Diseño
 
 ### Paleta de Colores
 ```css
---color-primary: #4A6B5D;    /* Verde bosque oscuro */
---color-secondary: #A8D5BA;  /* Verde menta claro */
---color-accent: #D9A689;     /* Tono tierra/durazno */
---color-text: #333333;       /* Gris oscuro para texto */
---color-light: #F7F7F7;      /* Fondo claro */
+--color-primary:
+--color-secondary:
+--color-accent:
+--color-text
+--color-light:
+--color-dark:
 --color-white: #FFFFFF;      /* Blanco */
 ```
 
@@ -127,18 +127,12 @@ Sistema de espaciado consistente con variables CSS:
 - ✅ Separación de responsabilidades
 - ✅ Código limpio y documentado
 
-## 🎓 Objetivos de Aprendizaje Cumplidos
-
 1. **Estructuración CSS profesional** con metodología BEM
 2. **Diseño responsivo** con enfoque mobile-first
 3. **Modularidad y escalabilidad** del código CSS
 4. **Buenas prácticas** de desarrollo frontend
 5. **Arquitectura de carpetas** estándar de la industria
 
-## 🌱 Sostenibilidad y Propósito
-
-Este proyecto representa más que una tienda online; es una declaración de valores hacia la moda sostenible y el desarrollo web responsable, implementando código limpio, eficiente y accesible para todos los usuarios.
-
 ---
 
-**Desarrollado con 💚 para un futuro más verde**
+
