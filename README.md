@@ -1,4 +1,4 @@
-# Te lo Vendo - Sitio Web Marketplace 
+<h1 align=center> Te lo Vendo - Sitio Web Marketplace </h1>
 
 Un sitio web responsivo para una empresa de ventas online , desarrollado con metodología BEM y arquitectura CSS modular.
 
@@ -63,12 +63,12 @@ Un sitio web responsivo para una empresa de ventas online , desarrollado con met
 
 ### Paleta de Colores
 ```css
---color-primary:
---color-secondary:
---color-accent:
---color-text
---color-light:
---color-dark:
+--color-primary: #E58E00
+--color-secondary: #27AFC9
+--color-accent: #FFBB02
+--color-text: #333
+--color-light: #B0A6A5
+--color-dark: #6D5C55
 --color-white: #FFFFFF;      /* Blanco */
 ```
 
@@ -133,12 +133,7 @@ Sistema de espaciado consistente con variables CSS:
 4. **Buenas prácticas** de desarrollo frontend
 5. **Arquitectura de carpetas** estándar de la industria
 
-# Integrantes
-## Carolina Hernández
-## Gonzalo Urrutia
-## Luis Carrillo
-## Juan Luis Mansilla
+## Integrantes
+<h3 align=center> Carolina Hernández | Gonzalo Urrutia | Luis Carrillo | Juan Luis Mansilla </h3>
 
 ---
-
-
