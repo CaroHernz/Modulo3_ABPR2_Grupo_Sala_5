@@ -5,7 +5,7 @@ Un sitio web responsivo para una empresa de ventas online , desarrollado con met
 ## 🌟 Características Principales
 
 ### 🎨 Diseño y UX
-- **Diseño responsivo** con enfoque mobile-first
+- **Diseño responsivo** con enfoque Mobile-first
 - **Interfaz moderna** con esquema de colores naturales
 - **Filtros** en el catálogo de productos
 
@@ -132,6 +132,12 @@ Sistema de espaciado consistente con variables CSS:
 3. **Modularidad y escalabilidad** del código CSS
 4. **Buenas prácticas** de desarrollo frontend
 5. **Arquitectura de carpetas** estándar de la industria
+
+# Integrantes
+## Carolina Hernández
+## Gonzalo Urrutia
+## Luis Carrillo
+## Juan Luis Mansilla
 
 ---
 
