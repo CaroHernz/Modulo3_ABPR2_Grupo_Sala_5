@@ -1,12 +1,152 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Te Lo Vendo</title>
-</head>
-<body>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Te Lo Vendo</title>
+  <link rel="icon" href="assets/images/tlv_icon.webp" type="image/x-icon">
+
+  
+    <!-- ======================= HEADER ======================= -->
+    <header>
+      <div>
+        <a href="#" class="header__logo">logo</a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#home" class="nav__link">Inicio</a></li>
+            <li class="nav__item"><a href="#catalogo" class="nav__link">Catálogo</a></li>
+            <li class="nav__item"><a href="aboutus.html" class="nav__link">Quienes Somos</a></li>
+          </ul>
+          <button class="nav__toggle" aria-label="Abrir menú">
+            &#9776; <!-- Este es el ícono de hamburguesa -->
+          </button>
+        </nav>
+      </div>
+    </header>          
+            
+    <main>    
+        
+    <!-- ======================= HOME ======================= -->
+     <div>
+        <section class="hero">
+          <div class="hero__content">
+                <h1 class="hero__title">Te Lo Vendo</h1>
+                <p class="hero__slogan">Encuentra lo que necesitas, rápido y seguro</p>                
+          </div>
+        </section>
+        <section class="novedades">
+            <div class="novedades_title">
+                <h3>Novedades</h3>
+            <div class="novedades__content"></div>
+                <ul>
+                    <li>🚀 <strong>¡Nueva colección de tecnología!</strong> Llegaron los últimos modelos de smartphones y accesorios.</li>
+                    <li>📦 <strong>Envíos gratis</strong> en compras mayores a $50.000 este mes.</li>
+                    <li>🌱 <strong>Productos sostenibles:</strong> Conoce nuestra línea eco-friendly.</li>
+                </ul>
+
+            </div>
+        </section>
+        <section class="productos">
+          <h2 class="productos__title">Productos</h2>
+          <div class="productos__container">
+            <div class="producto-card">
+              <img src="assets/image/" alt="" class="producto-card__img">
+              <div class="producto-card__info">
+                <h3 class="producto-card__title">##</h3>
+                <p class="producto-card__desc">##</p>
+                <p class="producto-card__#">##</p>
+                <button class="producto-card__btn">Comprar</button>
+              </div>
+            </div>          
+            <div class="producto-card">
+              <img src="assets/img/" alt="" class="producto-card__img">
+              <div class="producto-card__info">
+                <h3 class="producto-card__title">##</h3>
+                <p class="producto-card__desc">##</p>
+                <p class="producto-card__#"></p>
+                <button class="producto-card__btn">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+     </div>
+
+    <!-- ======================= CATÁLOGO ======================= -->
+        <div id="catalogo">
+            <section class="catalogo">
+              <div class="catalogo__container"></div>
+                <h2 class="catalogo__titulo">Nuestro Catálogo</h2>
+                <div class="catalogo__filtros">
+                  <button class="catalog__filter-btn catalog__filter-btn--active" data-filter="all">Todos</button>
+                  <button class="catalog__filter-btn" data-filter="##">##</button>
+                  <button class="catalog__filter-btn" data-filter="##">##</button>
+                </div>              
+                <div class="catalogo-grid">
+                  <div class="producto-card" data-category="##">
+                    <img src="assets/img/" alt="" class="producto-card__img">
+                    <div class="producto-card__info">
+                      <h3 class="producto-card__title">##</h3>
+                      <p class="producto-card__desc">##</p>
+                      <p class="producto-card__#">##</p>
+                      <button class="producto-card__btn">Comprar</button>
+                    </div>
+                  </div>             
+                  <div class="producto-card" data-category="##">
+                    <img src="assets/img/" alt="" class="producto-card__img">
+                    <div class="producto-card__info">
+                      <h3 class="producto-card__title">##</h3>
+                      <p class="producto-card__desc">##</p>
+                      <p class="producto-card__##">##</p>
+                      <button class="producto-card__btn">Comprar</button>
+                    </div>
+                  </div>                
+                  <div class="producto-card" data-category="##">
+                    <img src="assets/img/" alt="" class="producto-card__img">
+                    <div class="producto-card__info">
+                      <h3 class="producto-card__title">##</h3>
+                      <p class="producto-card__desc">##</p>
+                      <p class="producto-card__talla">##</p>
+                      <button class="producto-card__btn">Comprar</button>
+                    </div>
+                  </div>          
+                  <div class="producto-card" data-category="##">
+                    <img src="assets/img/collar-semilla-tagua.svg" alt="" class="producto-card__img">
+                    <div class="producto-card__info">
+                      <h3 class="producto-card__title">##</h3>
+                      <p class="producto-card__desc">##</p>
+                      <p class="producto-card__##">##</p>
+                      <button class="producto-card__btn">Comprar</button>
+                    </div>
+                  </div>                
+                </div>
+              </section>
+            </div>
+    <!-- ======================= CONTACTO ======================= -->
+      <div class="contacto" id="contacto">
+        <section class="contacto__container">
+          <div class="contacto__contenido">
+            <h2 class="contacto__titulo">Hablemos</h2>
+            <p>¿Tienes alguna pregunta o quieres hacer un pedido especial? ¡Estamos aquí para ayudarte! Contáctanos directamente a través de WhatsApp.</p>
+            <a href="https://wa.me/56912345678?text=Hola!%20Vengo%20del%20sitio%20web%20de%20VerdeModa%20y%20quisiera%20consultar%20por..." target="_blank" class="btn btn--primary">Contactar por WhatsApp</a>
+          </div>
+        </section>
+      </div>
+    </main>  
+
+    <!-- ======================= FOOTER ======================= -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Te lo vendo. Todos los derechos reservados.</p>
+            <p>Diseñado con ♥ pora servirte mejor.</p>
+        </div>
+    </footer>.</p>
+        </div>
+    </footer>
+
+
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
