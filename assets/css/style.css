@@ -1,3 +1,74 @@
+:root {
+    --color-primary: #E58E00;
+    --color-secondary: #27AFC9;
+    --color-accent: #FFBB02;
+    --color-text: rgb(65, 65, 65);
+    --color-light: #B0A6A5;
+    --color-dark: #6D5C55;
+    --color-white: #FFFFFF;      
+    --fuente-base: system-ui,Roboto;
+    --fuente-logo: Tahoma;
+    --fondo-image: url(../img/branding_fondo.jpg);
+}
 
-
-/*# sourceMappingURL=style.css.map */
+.nav {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-secondary);
+}
+.nav__list {
+    list-style: none;
+}
+.nav__toggle {
+    background-color: var(--color-light);
+}
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente-base);
+}
+.hero__content {
+    color: var(--color-dark);
+}
+.hero__title {
+    font-family: var(--fuente-logo);
+}
+.hero__slogan {
+    font-family: var(--fuente-base);
+    font-style: italic;
+}
+.novedades {
+    background-color: #FFBB02;
+}
+.novedades_title {
+    font-family: var(--fuente-logo);
+}
+.novedades__content {
+    font-family: var(--fuente-base);
+}
+.productos {
+    background-color: var(--color-light);
+}
+.productos__title {
+    font-family: var(--fuente-logo);
+}
+.producto-card {
+    background-color: var(--color-white);
+}
+.catalogo {
+    background-color: var(--color-light);
+}
+.catalogo__titulo {
+    font-family: var(--fuente-logo);
+}
+.contacto {
+    background-color: var(--color-secondary);
+}
+.contacto__titulo {
+    font-family: var(--fuente-logo);
+}
+.footer {
+    background: var(--color-dark);
+    color: var(--color-white)
+}
