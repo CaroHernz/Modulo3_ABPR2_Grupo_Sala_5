@@ -11,6 +11,10 @@
     --fondo-image: url(../img/branding_fondo.jpg);
 }
 
+.header__logo img{
+    width: 60px;
+    height: auto;
+}
 .nav {
     display: flex;
     flex-direction: column;
