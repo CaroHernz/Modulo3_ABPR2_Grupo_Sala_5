@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,89 +8,99 @@
   <title>Te Lo Vendo</title>
   <link rel="icon" href="assets/images/tlv_icon.webp" type="image/x-icon">
 
-  
-    <!-- ======================= HEADER ======================= -->
-    <header>
-      <div>
+  <!-- ======================= HEADER ======================= -->
+
+<body>
+  <header>
+    <div>
+      <nav class="nav">
         <a href="#" class="header__logo"><img src="./assets/images/logo_tlv.svg" alt=""></a>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
-            <li class="nav__item"><a href="#catalogo" class="nav__link">Catálogo</a></li>
-            <li class="nav__item"><a href="#aboutus" class="nav__link">Quienes Somos</a></li>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
+          <li class="nav__item"><a href="#catalogo" class="nav__link">Catálogo</a></li>
+          <li class="nav__item"><a href="#aboutus" class="nav__link active">Quienes Somos</a></li>
+        </ul>
+        <button class="nav__toggle" aria-label="Abrir menú">
+          &#9776;
+          <!-- Este es el ícono de hamburguesa    -->
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================= HOME ======================= -->
+    <section class="hero">
+      <div class="hero__content">
+        <img class="hero__image" src="/assets/images/tlv_banner.jpeg" alt="Te Lo Vendo">
+        <h1 class="hero__title">Te Lo Vendo</h1>
+        <p class="hero__slogan">Encuentra lo que necesitas, rápido y seguro</p>
+      </div>
+    </section>
+    <!-- ======================= HOME ======================= -->
+    <section class="about">
+      <div class="about__title">
+        <h2>Sobre Te lo Vendo</h2>
+      </div>
+      <div class="about__subtitle">Nuestra historia y propósito</div>
+      <div class="about__content">
+        <h3>Origen del proyecto...</h3>
+        <p><strong>Te lo Vendo</strong> nació en 2024 como una idea entre amigos. Queríamos crear un espacio donde
+          las personas pudieran vender y comprar productos de forma transparente, sin complicaciones. Hoy, somos un
+          equipo comprometido con la innovación y la satisfacción de nuestros usuarios.</p>
+        <h3>Objetivos del portal...</h3>
+        <p>
+        <ul>
+          <li>✔ Facilitar transacciones seguras entre vendedores independientes y compradores.</li>
+          <li>✔ Ofrecer productos variados con descripciones claras y precios justos. </li>
+          <li>✔ Ser 100% responsivo, para que puedas comprar desde cualquier dispositivo. </li>
+          <li>✔ Promover el comercio local y emprendimientos jóvenes. </li>
+        </ul>
+        </p>
+        <h3>Nuestra Misión...</h3>
+        <p>Queremos ser la plataforma de confianza para compras en línea, donde la simplicidad y la calidad sean
+          nuestra prioridad</p>
+        <div class="about__team">
+          <h3>Nuestro equipo:</h3>
+          <p>
+          <ul>
+            <li> 👨 Gonzalo Urrutia – Desarrollador Front-End (Diseño y experiencia de usuario).
+            </li>
+            <li> 🧑‍💻 Juan Luis Mansilla – Desarrollador Back-End (Funcionalidades y seguridad).
+            </li>
+            <li> 👨‍🎨 Luis Carrillo – Gestora de contenidos (Catálogo y comunicación).
+            </li>
+            <li> 👩‍🔧 Carolina Hernández – Diseñador UI/UX (Estilos y branding).
+            </li>
           </ul>
-          <button class="nav__toggle" aria-label="Abrir menú">
-            &#9776; <!-- Este es el ícono de hamburguesa -->
-          </button>
-        </nav>
-      </div>
-    </header>          
-            
-    <main>    
-        
-    <!-- ======================= HOME ======================= -->
-     <div>
-        <section class="hero">
-          <div class="hero__content">
-                <h1 class="hero__title">Te Lo Vendo</h1>
-                <p class="hero__slogan">Encuentra lo que necesitas, rápido y seguro</p>                
-          </div>
-        </section>
-    
-    <!-- ======================= HOME ======================= -->
-     <div>
-        <section class="about">
-            <div class="about__title">
-                <h2>Sobre Te lo Vendo – Nuestra historia y propósito</h2>            </div>
-          <div class="about__content">
-            <h3>Origen del proyecto...</h3>
-            <p><strong>Te lo Vendo</strong> nació en 2024 como una idea entre amigos. Queríamos crear un espacio donde las personas pudieran vender y comprar productos de forma transparente, sin complicaciones. Hoy, somos un equipo comprometido con la innovación y la satisfacción de nuestros usuarios.</p>
-            <h3>Objetivos del portal...</h3>
-            <p>
-                <ul>
-                    <li>✔ Facilitar transacciones seguras entre vendedores independientes y compradores.</li>
-                    <li>✔ Ofrecer productos variados con descripciones claras y precios justos.                    </li>
-                    <li>✔ Ser 100% responsivo, para que puedas comprar desde cualquier dispositivo.                    </li>
-                    <li>✔ Promover el comercio local y emprendimientos jóvenes.                    </li>
-                </ul>
-            </p>
-            <h3>Nuestra Misión...</h3>
-            <p>Queremos ser la plataforma de confianza para compras en línea, donde la simplicidad y la calidad sean nuestra prioridad</p>
-            <div class="about__team">
-                    <h3>Nuestro equipo:</h3>
-                    <p>
-                        👨 Gonzalo Urrutia – Desarrollador Front-End (Diseño y experiencia de usuario).
-                        🧑‍💻 Juan Luis Mansilla – Desarrollador Back-End (Funcionalidades y seguridad).
-                        👨‍🎨 Luis Carrillo – Gestora de contenidos (Catálogo y comunicación).
-                        👩‍🔧 Carolina Hernández – Diseñador UI/UX (Estilos y branding).
-                    </p>    
-            </div>
+          </p>
         </div>
       </div>
-        </section>
-       
+    </section>
     <!-- ======================= CONTACTO ======================= -->
-      <div class="contacto" id="contacto">
-        <section class="contacto__container">
-          <div class="contacto__contenido">
-            <h2 class="contacto__titulo">Hablemos</h2>
-            <p>¿Tienes alguna pregunta o quieres hacer un pedido especial? ¡Estamos aquí para ayudarte! Contáctanos directamente a través de WhatsApp.</p>
-            <a href="https://wa.me/56912345678?text=Hola!%20Vengo%20del%20sitio%20web%20de%20VerdeModa%20y%20quisiera%20consultar%20por..." target="_blank" class="btn btn--primary">Contactar por WhatsApp</a>
+    <div class="contact" id="contact">
+      <section class="contact__container">
+        <div class="contact__content">
+          <div class="contact__title">
+            <h2>Hablemos</h2>
           </div>
-        </section>
-      </div>
-    </main>  
-
-    <!-- ======================= FOOTER ======================= -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Te lo vendo. Todos los derechos reservados.</p>
-            <p>Diseñado con ♥ pora servirte mejor.</p>
+          <p>¿Tienes alguna pregunta o quieres hacer un pedido especial? ¡Estamos aquí para ayudarte! Contáctanos
+            directamente a través de WhatsApp.</p>
+          <a href="https://wa.me/56912345678?text=Hola!%20Vengo%20del%20sitio%20web%20de%20VerdeModa%20y%20quisiera%20consultar%20por..."
+            target="_blank" class="btn btn--primary">Contactar por WhatsApp</a>
         </div>
-    </footer>
-
-
-
-  <script src="assets/js/script.js"></script>
+      </section>
+    </div>
+  </main>
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="footer">
+    <div class="footer__container">
+      <p>&copy; 2025 Te lo vendo. Todos los derechos reservados.</p>
+      <p>Diseñado con ♥ pora servirte mejor.</p>
+    </div>
+  </footer>
 </body>
+<script src="assets/js/script.js"></script>
+</body>
+
 </html>
