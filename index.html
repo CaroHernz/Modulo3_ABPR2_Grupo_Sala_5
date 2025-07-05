@@ -7,144 +7,152 @@
   <title>Te Lo Vendo</title>
   <link rel="icon" href="assets/images/tlv_icon.webp" type="image/x-icon">
 
-  
-    <!-- ======================= HEADER ======================= -->
-    <header>
-      <div>
+  <!-- ======================= HEADER ======================= -->
+<body>
+  <header>
+    <div>
+      <nav class="nav">
         <a href="#" class="header__logo"><img src="./assets/images/logo_tlv.svg" alt=""></a>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#home" class="nav__link">Inicio</a></li>
-            <li class="nav__item"><a href="#catalogo" class="nav__link">Catálogo</a></li>
-            <li class="nav__item"><a href="aboutus.html" class="nav__link">Quienes Somos</a></li>
-          </ul>
-          <button class="nav__toggle" aria-label="Abrir menú">
-            &#9776; <!-- Este es el ícono de hamburguesa    -->
-          </button>
-        </nav>
-      </div>
-    </header>          
-            
-    <main>    
-        
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active">Inicio</a></li>
+          <li class="nav__item"><a href="#catalogo" class="nav__link">Catálogo</a></li>
+          <li class="nav__item"><a href="aboutus.html" class="nav__link">Quienes Somos</a></li>
+        </ul>
+        <button class="nav__toggle" aria-label="Abrir menú">
+          &#9776;
+          <!-- Este es el ícono de hamburguesa    -->
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
     <!-- ======================= HOME ======================= -->
-     <div>
-        <section class="hero">
-          <div class="hero__content">
-                <h1 class="hero__title">Te Lo Vendo</h1>
-                <p class="hero__slogan">Encuentra lo que necesitas, rápido y seguro</p>                
-          </div>
-        </section>
-        <section class="novedades">
-            <div class="novedades_title">
-                <h3>Novedades</h3>
-            <div class="novedades__content"></div>
-                <ul>
-                    <li>🚀 <strong>¡Nueva colección de tecnología!</strong> Llegaron los últimos modelos de smartphones y accesorios.</li>
-                    <li>📦 <strong>Envíos gratis</strong> en compras mayores a $50.000 este mes.</li>
-                    <li>🌱 <strong>Productos sostenibles:</strong> Conoce nuestra línea eco-friendly.</li>
-                </ul>
-
-            </div>
-        </section>
-        <section class="productos">
-          <h2 class="productos__title">Productos</h2>
-          <div class="productos__container">
-            <div class="producto-card">
-              <img src="assets/image/" alt="" class="producto-card__img">
-              <div class="producto-card__info">
-                <h3 class="producto-card__title">##</h3>
-                <p class="producto-card__desc">##</p>
-                <p class="producto-card__#">##</p>
-                <button class="producto-card__btn">Comprar</button>
-              </div>
-            </div>          
-            <div class="producto-card">
-              <img src="assets/img/" alt="" class="producto-card__img">
-              <div class="producto-card__info">
-                <h3 class="producto-card__title">##</h3>
-                <p class="producto-card__desc">##</p>
-                <p class="producto-card__#"></p>
-                <button class="producto-card__btn">Comprar</button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-     </div>
-
-    <!-- ======================= CATÁLOGO ======================= -->
-        <div id="catalogo">
-            <section class="catalogo">
-              <div class="catalogo__container"></div>
-                <h2 class="catalogo__titulo">Nuestro Catálogo</h2>
-                <div class="catalogo__filtros">
-                  <button class="catalog__filter-btn catalog__filter-btn--active" data-filter="all">Todos</button>
-                  <button class="catalog__filter-btn" data-filter="##">##</button>
-                  <button class="catalog__filter-btn" data-filter="##">##</button>
-                </div>              
-                <div class="catalogo-grid">
-                  <div class="producto-card" data-category="##">
-                    <img src="assets/img/" alt="" class="producto-card__img">
-                    <div class="producto-card__info">
-                      <h3 class="producto-card__title">##</h3>
-                      <p class="producto-card__desc">##</p>
-                      <p class="producto-card__#">##</p>
-                      <button class="producto-card__btn">Comprar</button>
-                    </div>
-                  </div>             
-                  <div class="producto-card" data-category="##">
-                    <img src="assets/img/" alt="" class="producto-card__img">
-                    <div class="producto-card__info">
-                      <h3 class="producto-card__title">##</h3>
-                      <p class="producto-card__desc">##</p>
-                      <p class="producto-card__##">##</p>
-                      <button class="producto-card__btn">Comprar</button>
-                    </div>
-                  </div>                
-                  <div class="producto-card" data-category="##">
-                    <img src="assets/img/" alt="" class="producto-card__img">
-                    <div class="producto-card__info">
-                      <h3 class="producto-card__title">##</h3>
-                      <p class="producto-card__desc">##</p>
-                      <p class="producto-card__talla">##</p>
-                      <button class="producto-card__btn">Comprar</button>
-                    </div>
-                  </div>          
-                  <div class="producto-card" data-category="##">
-                    <img src="assets/img/collar-semilla-tagua.svg" alt="" class="producto-card__img">
-                    <div class="producto-card__info">
-                      <h3 class="producto-card__title">##</h3>
-                      <p class="producto-card__desc">##</p>
-                      <p class="producto-card__##">##</p>
-                      <button class="producto-card__btn">Comprar</button>
-                    </div>
-                  </div>                
-                </div>
-              </section>
-            </div>
-    <!-- ======================= CONTACTO ======================= -->
-      <div class="contacto" id="contacto">
-        <section class="contacto__container">
-          <div class="contacto__contenido">
-            <h2 class="contacto__titulo">Hablemos</h2>
-            <p>¿Tienes alguna pregunta o quieres hacer un pedido especial? ¡Estamos aquí para ayudarte! Contáctanos directamente a través de WhatsApp.</p>
-            <a href="https://wa.me/56912345678?text=Hola!%20Vengo%20del%20sitio%20web%20de%20VerdeModa%20y%20quisiera%20consultar%20por..." target="_blank" class="btn btn--primary">Contactar por WhatsApp</a>
-          </div>
-        </section>
+    <section class="hero">
+      <div class="hero__content">
+        <img class="hero__image" src="/assets/images/tlv_banner.jpeg" alt="Te Lo Vendo">
+        <h1 class="hero__title">Te Lo Vendo</h1>
+        <p class="hero__slogan">Encuentra lo que necesitas, rápido y seguro</p>
       </div>
-    </main>  
+    </section>
 
-    <!-- ======================= FOOTER ======================= -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Te lo vendo. Todos los derechos reservados.</p>
-            <p>Diseñado con ♥ pora servirte mejor.</p>
+    <section class="news">
+      <div class="news__title">
+        <h3>Novedades</h3>
+      </div>
+      <div class="news__content">
+        <ul>
+          <li>🚀 <strong>¡Nueva colección de tecnología!</strong> Llegaron los últimos modelos de smartphones y
+            accesorios.</li>
+          <li>📦 <strong>Envíos gratis</strong> en compras mayores a $50.000 este mes.</li>
+          <li>🌱 <strong>Productos sostenibles:</strong> Conoce nuestra línea eco-friendly.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="products__title">
+        <h3>Productos</h3>
+      </div>      
+      <div class="products__container">
+        <div class="product-card">
+          <img src="assets/images/product1.jpeg" alt="" class="product-card__img">
+          <div class="product-card__info">
+            <h3 class="product-card__title">Robot Aspirador X300</h3>
+            <p class="product-card__desc">Aspiradora inteligente con mapeo láser y app control. Ideal para pisos de hasta 120m².</p>
+            <p class="product-card__price">$249.990</p>
+            <button class="product-card__btn">Comprar</button>
+          </div>
         </div>
-    </footer>
-
-
-
-  <script src="assets/js/script.js"></script>
+        <div class="product-card">
+          <img src="assets/images/product2.jpeg" alt="" class="product-card__img">
+          <div class="product-card__info">
+            <h3 class="product-card__title">Airfryer Digital 5L</h3>
+            <p class="product-card__desc">Freidora de aire con 8 programas preestablecidos y tecnología 360° para cocción uniforme.</p>
+            <p class="product-card__price">$89.990</p>
+            <button class="product-card__btn">Comprar</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="assets/images/product3.jpeg" alt="" class="product-card__img">
+          <div class="product-card__info">
+            <h3 class="product-card__title">Smartwatch Deportivo Pro</h3>
+            <p class="product-card__desc">Monitor de ritmo cardíaco, GPS integrado y resistencia al agua 50m. Batería de 7 días.</p>
+            <p class="product-card__price">$129.990</p>
+            <button class="product-card__btn">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======================= CATÁLOGO ======================= -->
+    <div id="catalog">
+      <section class="catalog">
+        <div class="catalog__container">
+          <div class="catalog__title">
+            <h3>Nuestro Catálogo</h3>
+          </div> 
+        <div class="catalog__filter">
+          <button class="catalog__filter-btn catalog__filter-btn--active" data-filter="all">Todos</button>
+          <button class="catalog__filter-btn" data-filter="tecnology">Tecnología</button>
+          <button class="catalog__filter-btn" data-filter="home">Electrodomésticos</button>
+        </div>
+        <div class="catalog-grid">
+          <div class="products__container">
+            <div class="product-card">
+              <img src="assets/images/product1.jpeg" alt="" class="product-card__img">
+              <div class="product-card__info">
+                <h3 class="product-card__title">Robot Aspirador X300</h3>
+                <p class="product-card__desc">Aspiradora inteligente con mapeo láser y app control. Ideal para pisos de hasta 120m².</p>
+                <p class="product-card__price">$249.990</p>
+                <button class="product-card__btn">Comprar</button>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="assets/images/product2.jpeg" alt="" class="product-card__img">
+              <div class="product-card__info">
+                <h3 class="product-card__title">Airfryer Digital 5L</h3>
+                <p class="product-card__desc">Freidora de aire con 8 programas preestablecidos y tecnología 360° para cocción uniforme.</p>
+                <p class="product-card__price">$89.990</p>
+                <button class="product-card__btn">Comprar</button>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="assets/images/product3.jpeg" alt="" class="product-card__img">
+              <div class="product-card__info">
+                <h3 class="product-card__title">Smartwatch Deportivo Pro</h3>
+                <p class="product-card__desc">Monitor de ritmo cardíaco, GPS integrado y resistencia al agua 50m. Batería de 7 días.</p>
+                <p class="product-card__price">$129.990</p>
+                <button class="product-card__btn">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+    </div>
+    <!-- ======================= CONTACTO ======================= -->
+    <div class="contact" id="contact">
+      <section class="contact__container">
+        <div class="contact__content">
+          <div class="contact__title">          
+            <h2>Hablemos</h2>
+          </div>
+          <p>¿Tienes alguna pregunta o quieres hacer un pedido especial? ¡Estamos aquí para ayudarte! Contáctanos
+            directamente a través de WhatsApp.</p>
+          <a href="https://wa.me/56912345678?text=Hola!%20Vengo%20del%20sitio%20web%20de%20VerdeModa%20y%20quisiera%20consultar%20por..."
+            target="_blank" class="btn btn--primary">Contactar por WhatsApp</a>
+        </div>
+      </section>
+    </div>
+  </main>
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="footer">
+    <div class="footer__container">
+      <p>&copy; 2025 Te lo vendo. Todos los derechos reservados.</p>
+      <p>Diseñado con ♥ pora servirte mejor.</p>
+    </div>
+  </footer>
 </body>
+<script src="assets/js/script.js"></script>
+
 </html>
