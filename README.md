@@ -66,11 +66,20 @@ Un sitio web responsivo para una empresa de ventas online , desarrollado con met
 --color-primary: #E58E00
 --color-secondary: #27AFC9
 --color-accent: #FFBB02
+<<<<<<< HEAD
 --color-text: #333
+=======
+--color-text
+>>>>>>> c7a2445 (agrega colores al readme)
 --color-light: #B0A6A5
 --color-dark: #6D5C55
 --color-white: #FFFFFF;      /* Blanco */
 ```
+
+
+
+
+
 
 ### Tipografía
 - **Headings**: 'Playfair Display', serif
