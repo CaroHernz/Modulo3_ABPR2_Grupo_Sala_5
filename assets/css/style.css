@@ -330,7 +330,7 @@ body {
 
 .form {
     background-color: var(--color-light);
-    padding: 0.5rem 3rem;
+    padding: 3rem;
     color: var(--color-text);
     text-align: center;
     display: flex;
@@ -355,15 +355,29 @@ body {
     font-style: italic;
     text-align: right;
     color: var(--color-white);
+    padding-top: 10px;
 }
 
 .form__content {
     color: var(--color-text);
+    background-color: #27AFC9;
+    padding: 3em 8em;
+    margin: 2em 0;
+    border-radius: 45px;
+    box-shadow: 2px 2px 2px 1px var(--color-dark);
 }
 
-.form__content h3{
-    font-family: var(--fuente-logo);
-    text-align: left;    
+
+.form__input, .form__textarea, .form__button {
+    border: none;
+    border-radius: 5px;
+    padding: 0.9em;
+    margin: 0.3em;
+}
+
+.form__button:hover{
+    color: var(--color-white);
+    background-color: var(--color-accent);
 }
 
 @media (max-width: 600px) {

@@ -2,78 +2,91 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>Te Lo Vendo</title>
-  <link rel="icon" href="assets/images/tlv_icon.webp" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Te Lo Vendo</title>
+    <link rel="icon" href="assets/images/tlv_icon.webp" type="image/x-icon">
 
-  <!-- ======================= HEADER ======================= -->
+    <!-- ======================= HEADER ======================= -->
 
 <body>
-  <header>
-    <div>
-      <nav class="nav">
-        <a href="#" class="header__logo"><img src="./assets/images/logo_tlv.svg" alt=""></a>
-        <ul class="nav__list">
-          <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
-          <li class="nav__item"><a href="#catalogo" class="nav__link">Catálogo</a></li>
-          <li class="nav__item"><a href="aboutus.html" class="nav__link">Quienes Somos</a></li>
-          <li class="nav__item"><a href="#" class="nav__link active">Contacto</a></li>
-        </ul>
-        <button class="nav__toggle" aria-label="Abrir menú">
-          &#9776;
-          <!-- Este es el ícono de hamburguesa    -->
-        </button>
-      </nav>
-    </div>
-  </header>
+    <header>
+        <div>
+            <nav class="nav">
+                <a href="#" class="header__logo"><img src="./assets/images/logo_tlv.svg" alt=""></a>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
+                    <li class="nav__item"><a href="#catalogo" class="nav__link">Catálogo</a></li>
+                    <li class="nav__item"><a href="aboutus.html" class="nav__link">Quienes Somos</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link active">Contacto</a></li>
+                </ul>
+                <button class="nav__toggle" aria-label="Abrir menú">
+                    &#9776;
+                    <!-- Este es el ícono de hamburguesa    -->
+                </button>
+            </nav>
+        </div>
+    </header>
 
-  <main>
-    <!-- ======================= HOME ======================= -->
-    <section class="hero">
-      <div class="hero__content">
-        <img class="hero__image" src="/assets/images/tlv_banner.jpeg" alt="Te Lo Vendo">
-        <h1 class="hero__title">Te Lo Vendo</h1>
-        <p class="hero__slogan">Encuentra lo que necesitas, rápido y seguro</p>
-      </div>
-    </section>
-    <!-- ======================= HOME ======================= -->
-    <section class="form">
-      <div class="form__title">
-        <h2>Sobre Te lo Vendo</h2>
-      </div>
-      <div class="form__subtitle">Nuestra historia y propósito</div>
-      <div class="form__content">
-        
-        
-        
-          
+    <main>
+        <!-- ======================= HOME ======================= -->
+        <section class="hero">
+            <div class="hero__content">
+                <img class="hero__image" src="/assets/images/tlv_banner.jpeg" alt="Te Lo Vendo">
+                <h1 class="hero__title">Te Lo Vendo</h1>
+                <p class="hero__slogan">Encuentra lo que necesitas, rápido y seguro</p>
+            </div>
+        </section>
+        <!-- ======================= HOME ======================= -->
+         <!-- CSS líneas 331 en adelante -->
+        <section class="form">
+            <div class="form__title">
+                <h2>Contáctanos</h2>
+            </div>
+            <div class="form__subtitle">Para mayor información</div>
+            <div class="form__content">
+                <form action="">
+                    <div class="form__item">
+                        <label class="item__label" for="name">Nombre</label>
+                        <input class="form__input" type="text" id="name" placeholder="Maria Vargas">
+                    </div>
+                    <div class="form__item">
+                        <label class="item__label" for="mail">Correo</label>
+                        <input class="form__input"  type="text" id="mail" placeholder="mariavargas@gmail.com">
+                    </div>
+                    <div class="form__item">
+                        <textarea class="form__textarea"  name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form__item">
+                        <button class="form__button">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- ======================= CONTACTO ======================= -->
+        <div class="contact" id="contact">
+            <section class="contact__container">
+                <div class="contact__content">
+                    <div class="contact__title">
+                        <h2>Hablemos</h2>
+                    </div>
+                    <p>¿Tienes alguna pregunta o quieres hacer un pedido especial? ¡Estamos aquí para ayudarte!
+                        Contáctanos
+                        directamente a través de WhatsApp.</p>
+                    <a href="https://wa.me/56912345678?text=Hola!%20Vengo%20del%20sitio%20web%20de%20VerdeModa%20y%20quisiera%20consultar%20por..."
+                        target="_blank" class="btn btn--primary">Contactar por WhatsApp</a>
+                </div>
+            </section>
         </div>
-      </div>
-    </section>
-    <!-- ======================= CONTACTO ======================= -->
-    <div class="contact" id="contact">
-      <section class="contact__container">
-        <div class="contact__content">
-          <div class="contact__title">
-            <h2>Hablemos</h2>
-          </div>
-          <p>¿Tienes alguna pregunta o quieres hacer un pedido especial? ¡Estamos aquí para ayudarte! Contáctanos
-            directamente a través de WhatsApp.</p>
-          <a href="https://wa.me/56912345678?text=Hola!%20Vengo%20del%20sitio%20web%20de%20VerdeModa%20y%20quisiera%20consultar%20por..."
-            target="_blank" class="btn btn--primary">Contactar por WhatsApp</a>
+    </main>
+    <!-- ======================= FOOTER ======================= -->
+    <footer class="footer">
+        <div class="footer__container">
+            <p>&copy; 2025 Te lo vendo. Todos los derechos reservados.</p>
+            <p>Diseñado con ♥ pora servirte mejor.</p>
         </div>
-      </section>
-    </div>
-  </main>
-  <!-- ======================= FOOTER ======================= -->
-  <footer class="footer">
-    <div class="footer__container">
-      <p>&copy; 2025 Te lo vendo. Todos los derechos reservados.</p>
-      <p>Diseñado con ♥ pora servirte mejor.</p>
-    </div>
-  </footer>
+    </footer>
 </body>
 <script src="assets/js/script.js"></script>
 </body>
