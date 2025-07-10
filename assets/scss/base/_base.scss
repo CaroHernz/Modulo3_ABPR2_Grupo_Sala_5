@@ -1,0 +1,21 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+    font-family: $fuente-base;
+    @include flex-center;
+    width: 100%;
+}
+header {
+    width: 100%;
+}
+main {
+    width: 100%;
+}
+footer {
+    width: 100%;
+}

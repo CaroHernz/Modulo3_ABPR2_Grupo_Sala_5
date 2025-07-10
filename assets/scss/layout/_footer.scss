@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+@use '../base/base' as *;
+
+.footer {
+    background: $color-text;
+    color: $color-white;
+    padding: 0.5rem 1rem;
+    @include flex-center;
+}
+.footer__container {
+    font-family: $fuente-logo;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 0.3;
+    color: $color-secondary;
+}

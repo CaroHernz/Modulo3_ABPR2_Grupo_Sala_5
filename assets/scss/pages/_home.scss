@@ -1,0 +1,31 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+@use '../base/base' as *;
+
+.news {
+    background-color: $color-accent;
+    padding: 0.5rem 1rem;
+    color: $color-text;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.news__title {
+    font-family: $fuente-logo;
+    font-size: 1.1rem;
+    background: $color-white;
+    border-radius: 50px;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    width: 500px;
+}
+.news__content ul{
+    font-family: $fuente-base;
+    list-style: none;
+    text-align: left;
+    line-height: 2;
+    font-size: 1rem;
+}

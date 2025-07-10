@@ -1,0 +1,112 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+@use '../base/base' as *;
+
+.products {
+    background-color: $color-light;
+    padding: 0.5rem 1rem;
+    color: $color-text;
+    text-align: center;
+    @include flex-center;
+    flex-direction: column;
+    
+}
+.products__title {
+    font-family: $fuente-logo;
+    font-size: 1.1rem;
+    background-color: $color-white;
+    border-radius: 50px;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    width: 500px;
+}
+.products__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 800px;
+    gap: 1rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+
+}
+.product-card {
+    background-color: $color-white;
+    width: 25%;
+    flex-direction: column;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+    display: none;
+}
+.product-card.active {
+    display: block;
+}
+.product-card:hover {
+    transform: scale(1.03);
+}
+.product-card__img {
+    width: 100%;
+    border-radius: 5px;
+}
+.product-card__info {
+    font-family: $fuente-base;
+    color:$color-text
+}
+.product-card__title {
+    font-family: $fuente-logo;
+    font-size: 1.1rem;
+}
+.product-card__desc {
+    text-align: justify;
+    font-size: 0.9rem;
+}
+.product-card__price {
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: $color-primary;
+}
+.product-card__btn {
+    background-color: $color-secondary;
+    color: $color-white;
+    border-radius: 20px;
+    border: none;
+    padding: 0.5rem 1rem;
+    box-shadow: $shadow;
+    cursor: pointer;
+}
+.product-card__btn:hover {
+    transform: scale(1.1);
+}
+ .products__container {
+        flex-wrap: wrap;
+    }
+    .product-card {
+    display: none;
+    }
+.product-card.active {
+    display: block;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .products__container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .catalog__container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .product-card {
+        width: 100%;
+    }
+    .product-card__img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+}

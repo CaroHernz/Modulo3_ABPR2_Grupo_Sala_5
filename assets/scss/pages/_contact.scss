@@ -1,0 +1,42 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+@use '../base/base' as *;
+
+.contact__container {
+    background-color: $color-secondary;
+}
+.contact__content {
+    display: flex;
+    flex-direction: row;
+    color: $color-white;
+    padding: 1rem 2rem;
+    gap: 2rem;
+    text-align: center;
+    align-items: center;
+}
+.contact__title {
+    background-color: $color-white;
+    padding: 0.2rem 2rem;
+    border-radius: 50px;
+}
+.contact__title h2{
+    font-family: $fuente-logo;
+    color: $color-secondary;
+}
+.contact__content a{
+    text-decoration: none;
+    color: $color-text;
+    background-color: $color-accent;
+    border-radius: 50%;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+
+
+@media (max-width: 768px) {
+  
+    .contact__title{
+        display: none;
+    }
+}
