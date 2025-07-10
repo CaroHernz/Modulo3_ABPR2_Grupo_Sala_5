@@ -24,7 +24,7 @@ Un sitio web responsivo para una empresa de ventas online , desarrollado con met
 ```
 /
 ├── index.html             # Archivo HTML principal
-|-- aboutus.html           # Página de información
+├── aboutus.html           # Página de información
 ├── assets/
 │   ├── css/   
 │   │   └── style.css      # Archivo de estilos
@@ -66,39 +66,21 @@ Un sitio web responsivo para una empresa de ventas online , desarrollado con met
 --color-primary: #E58E00
 --color-secondary: #27AFC9
 --color-accent: #FFBB02
-<<<<<<< HEAD
---color-text: #333
-=======
---color-text
->>>>>>> c7a2445 (agrega colores al readme)
+--color-text: #c7a2445
 --color-light: #B0A6A5
 --color-dark: #6D5C55
 --color-white: #FFFFFF;      /* Blanco */
 ```
 
 
-
-
-
-
 ### Tipografía
 - **Headings**: 'Playfair Display', serif
 - **Body**: 'Montserrat', sans-serif
 
-### Espaciados
-Sistema de espaciado consistente con variables CSS:
-- `--spacing-xs`: 5px
-- `--spacing-sm`: 10px
-- `--spacing-md`: 15px
-- `--spacing-lg`: 20px
-- `--spacing-xl`: 30px
-- `--spacing-xxl`: 50px
-
 ## 📱 Breakpoints Responsivos
 
 - **Móvil**: < 768px
-- **Tablet**: 768px - 1023px
-- **Desktop**: > 1024px
+- **Desktop**: > 768px
 
 ## 🚀 Funcionalidades
 
