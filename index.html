@@ -15,7 +15,7 @@
         <a href="#" class="header__logo"><img src="./assets/images/logo_tlv.svg" alt=""></a>
         <ul class="nav__list">
           <li class="nav__item"><a href="#home" class="nav__link active">Inicio</a></li>
-          <li class="nav__item"><a href="#catalogo" class="nav__link">Catálogo</a></li>
+          <li class="nav__item"><a href="catalog.html" class="nav__link">Catálogo</a></li>
           <li class="nav__item"><a href="aboutus.html" class="nav__link">Quienes Somos</a></li>
           <li class="nav__item"><a href="contact.html" class="nav__link">Contacto</a></li>
         </ul>
@@ -53,7 +53,7 @@
 
     <section class="products">
       <div class="products__title">
-        <h3>Productos</h3>
+        <h3>Productos Destacados</h3>
       </div>      
       <div class="products__container">
         <div class="product-card">
@@ -65,12 +65,12 @@
             <button class="product-card__btn">Comprar</button>
           </div>
         </div>
-        <div class="product-card">
-          <img src="assets/images/product2.jpeg" alt="" class="product-card__img">
+        <div class="product-card" data-category="tecnology">
+          <img src="assets/images/product7.jpeg" alt="" class="product-card__img">
           <div class="product-card__info">
-            <h3 class="product-card__title">Airfryer Digital 5L</h3>
-            <p class="product-card__desc">Freidora de aire con 8 programas preestablecidos y tecnología 360° para cocción uniforme.</p>
-            <p class="product-card__price">$89.990</p>
+            <h3 class="product-card__title">Laptop UltraSlim i7</h3>
+            <p class="product-card__desc">Pantalla de 14" FHD, 16GB RAM, SSD 512GB, Intel Iris Xe. Solo 1.2kg de peso.</p>
+            <p class="product-card__price">$899.990</p>
             <button class="product-card__btn">Comprar</button>
           </div>
         </div>
@@ -99,8 +99,8 @@
         </div>
         <div class="catalog-grid">
           <div class="products__container">
-            <div class="product-card">
-              <img src="assets/images/product1.jpeg" alt="" class="product-card__img">
+            <div class="product-card active" data-category="home">
+              <img src="assets/images/product1.jpeg" alt="Robot Aspirador X300" class="product-card__img">
               <div class="product-card__info">
                 <h3 class="product-card__title">Robot Aspirador X300</h3>
                 <p class="product-card__desc">Aspiradora inteligente con mapeo láser y app control. Ideal para pisos de hasta 120m².</p>
@@ -108,8 +108,8 @@
                 <button class="product-card__btn">Comprar</button>
               </div>
             </div>
-            <div class="product-card">
-              <img src="assets/images/product2.jpeg" alt="" class="product-card__img">
+            <div class="product-card active" data-category="home">
+              <img src="assets/images/product2.jpeg" alt="Airfryer Digital 5L" class="product-card__img">
               <div class="product-card__info">
                 <h3 class="product-card__title">Airfryer Digital 5L</h3>
                 <p class="product-card__desc">Freidora de aire con 8 programas preestablecidos y tecnología 360° para cocción uniforme.</p>
@@ -117,8 +117,8 @@
                 <button class="product-card__btn">Comprar</button>
               </div>
             </div>
-            <div class="product-card">
-              <img src="assets/images/product3.jpeg" alt="" class="product-card__img">
+            <div class="product-card active" data-category="tecnology">
+              <img src="assets/images/product3.jpeg" alt="Smartwatch Deportivo Pro" class="product-card__img">
               <div class="product-card__info">
                 <h3 class="product-card__title">Smartwatch Deportivo Pro</h3>
                 <p class="product-card__desc">Monitor de ritmo cardíaco, GPS integrado y resistencia al agua 50m. Batería de 7 días.</p>
@@ -152,6 +152,6 @@
       <p>Diseñado con ♥ pora servirte mejor.</p>
     </div>
   </footer>
-<script src="assets/js/script.js"></script>
+<script src="assets/scripts/script.js"></script>
 </body>
 </html>

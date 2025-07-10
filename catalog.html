@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Te Lo Vendo</title>
+  <link rel="icon" href="assets/images/tlv_icon.webp" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+   
+  </style>
+  <!-- ======================= HEADER ======================= -->
+<body>
+  <header>
+    <div>
+      <nav class="nav">
+        <a href="#" class="header__logo"><img src="./assets/images/logo_tlv.svg" alt=""></a>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
+          <li class="nav__item"><a href="#" class="nav__link--active">Catálogo</a></li>
+          <li class="nav__item"><a href="aboutus.html" class="nav__link">Quienes Somos</a></li>
+          <li class="nav__item"><a href="contact.html" class="nav__link">Contacto</a></li>
+        </ul>
+        <button class="nav__toggle" aria-label="Abrir menú">
+          &#9776;
+          <!-- Este es el ícono de hamburguesa    -->
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================= HOME ======================= -->
+    <section class="hero">
+      <div class="hero__content">
+        <img class="hero__image" src="/assets/images/tlv_banner.jpeg" alt="Te Lo Vendo">
+        <h1 class="hero__title">Te Lo Vendo</h1>
+        <p class="hero__slogan">Encuentra lo que necesitas, rápido y seguro</p>
+      </div>
+    </section>
+    <!-- ======================= CATÁLOGO ======================= -->
+    <div id="catalog">
+      <section class="catalog">
+        <div class="catalog__container">
+          <div class="catalog__title">
+            <h3>Nuestro Catálogo</h3>
+          </div> 
+        <div class="catalog__filter">
+          <button class="catalog__filter-btn catalog__filter-btn--active" data-filter="all">Todos</button>
+          <button class="catalog__filter-btn" data-filter="tecnology">Tecnología</button>
+          <button class="catalog__filter-btn" data-filter="home">Electrodomésticos</button>
+        </div>
+        <div class="catalog-grid">
+          <div class="products__container">
+            <div class="product-card active" data-category="home">
+              <img src="assets/images/product1.jpeg" alt="Robot aspirador" class="product-card__img">
+              <div class="product-card__info">
+                <h3 class="product-card__title">Robot Aspirador X300</h3>
+                <p class="product-card__desc">Aspiradora inteligente con mapeo láser y app control. Ideal para pisos de hasta 120m².</p>
+                <p class="product-card__price">$249.990</p>
+                <button class="product-card__btn">Comprar</button>
+              </div>
+            </div>
+            <div class="product-card active" data-category="home">
+              <img src="assets/images/product2.jpeg" alt="" class="product-card__img">
+              <div class="product-card__info">
+                <h3 class="product-card__title">Airfryer Digital 5L</h3>
+                <p class="product-card__desc">Freidora de aire con 8 programas preestablecidos y tecnología 360° para cocción uniforme.</p>
+                <p class="product-card__price">$89.990</p>
+                <button class="product-card__btn">Comprar</button>
+              </div>
+            </div>
+            <div class="product-card active" data-category="tecnology">
+              <img src="assets/images/product3.jpeg" alt="" class="product-card__img">
+              <div class="product-card__info">
+                <h3 class="product-card__title">Smartwatch Deportivo Pro</h3>
+                <p class="product-card__desc">Monitor de ritmo cardíaco, GPS integrado y resistencia al agua 50m. Batería de 7 días.</p>
+                <p class="product-card__price">$129.990</p>
+                <button class="product-card__btn">Comprar</button>
+              </div>
+            </div>
+            <div class="product-card active" data-category="tecnology">
+                <img src="assets/images/product4.jpeg" alt="" class="product-card__img">
+                <div class="product-card__info">
+                  <h3 class="product-card__title">Parlante Bluetooth XSound</h3>
+                  <p class="product-card__desc">Sonido 360° con 20W de potencia. Resistente al agua IPX7 y batería de 15 horas.</p>
+                  <p class="product-card__price">$59.990</p>
+                  <button class="product-card__btn">Comprar</button>
+                </div>
+            </div>
+            <div class="product-card active" data-category="home">
+                <img src="assets/images/product5.jpeg" alt="" class="product-card__img">
+                <div class="product-card__info">
+                  <h3 class="product-card__title">Kit Limpieza para Robot</h3>
+                  <p class="product-card__desc">Incluye 6 paños de microfibra, 2 cepillos y solución limpiadora compatible con marcas principales.</p>
+                  <p class="product-card__price">$19.990</p>
+                  <button class="product-card__btn">Comprar</button>
+                </div>
+            </div>
+              <div class="product-card active" data-category="tecnology">
+                <img src="assets/images/product6.jpeg" alt="" class="product-card__img">
+                <div class="product-card__info">
+                  <h3 class="product-card__title">Cargador Inalámbrico 3en1</h3>
+                  <p class="product-card__desc">Carga tu smartphone, reloj y audífonos simultáneamente. Potencia 15W.</p>
+                  <p class="product-card__price">$34.990</p>
+                  <button class="product-card__btn">Comprar</button>
+                </div>
+              </div>
+              <div class="product-card active" data-category="tecnology">
+                <img src="assets/images/product7.jpeg" alt="" class="product-card__img">
+                <div class="product-card__info">
+                  <h3 class="product-card__title">Laptop UltraSlim i7</h3>
+                  <p class="product-card__desc">Pantalla de 14" FHD, 16GB RAM, SSD 512GB, Intel Iris Xe. Solo 1.2kg de peso.</p>
+                  <p class="product-card__price">$899.990</p>
+                  <button class="product-card__btn">Comprar</button>
+                </div>
+              </div>
+              <div class="product-card active" data-category="home">
+                <img src="assets/images/product8.jpeg" alt="" class="product-card__img">
+                <div class="product-card__info">
+                  <h3 class="product-card__title">Robot Cocina 12 en 1</h3>
+                  <p class="product-card__desc">Amasa, cocina al vapor, fríe y más. Pantalla táctil y 50 recetas preprogramadas.</p>
+                  <p class="product-card__price">$249.990</p>
+                  <button class="product-card__btn">Comprar</button>
+                </div>
+              </div>
+              <div class="product-card active" data-category="tecnology">
+                <img src="assets/images/product9.jpeg" alt="" class="product-card__img">
+                <div class="product-card__info">
+                  <h3 class="product-card__title">Monitor Gamer 32" 4K</h3>
+                  <p class="product-card__desc">144Hz, 1ms, HDR600, AMD FreeSync Premium. Incluye soporte ajustable.</p>
+                  <p class="product-card__price">$459.990</p>
+                  <button class="product-card__btn">Comprar</button>
+                </div>
+              </div>
+              <div class="product-card active" data-category="home">
+                <img src="assets/images/product10.jpeg" alt="" class="product-card__img">
+                <div class="product-card__info">
+                  <h3 class="product-card__title">Cafetera Smart WiFi</h3>
+                  <p class="product-card__desc">Prepara café desde tu app. Molinillo integrado y 6 perfiles de bebidas.</p>
+                  <p class="product-card__price">$179.990</p>
+                  <button class="product-card__btn">Comprar</button>
+                </div>
+              </div>
+              <div class="product-card active" data-category="tecnology">
+                <img src="assets/images/product11.jpeg" alt="" class="product-card__img">
+                <div class="product-card__info">
+                  <h3 class="product-card__title">SSD Externo 2TB USB-C</h3>
+                  <p class="product-card__desc">1050MB/s, resistente a golpes y agua. Ideal para gamers y creadores de contenido.</p>
+                  <p class="product-card__price">$89.990</p>
+                  <button class="product-card__btn">Comprar</button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      </section>
+    </div>
+    <!-- ======================= CONTACTO ======================= -->
+    <div class="contact" id="contact">
+      <section class="contact__container">
+        <div class="contact__content">
+          <div class="contact__title">          
+            <h2>Hablemos</h2>
+          </div>
+          <p>¿Tienes alguna pregunta o quieres hacer un pedido especial? ¡Estamos aquí para ayudarte! Contáctanos
+            directamente a través de WhatsApp.</p>
+          <a href="https://wa.me/56912345678?text=Hola!%20Vengo%20del%20sitio%20web%20de%20VerdeModa%20y%20quisiera%20consultar%20por..."
+            target="_blank" class="btn btn--primary">Contactar por WhatsApp</a>
+        </section>
+      </div>
+    </main>  
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="footer">
+    <div class="footer__container">
+      <p>&copy; 2025 Te lo vendo. Todos los derechos reservados.</p>
+      <p>Diseñado con ♥ pora servirte mejor.</p>
+    </div>
+  </footer>
+  <script src="assets/scripts/script.js"></script>
+</body>
+</html>
