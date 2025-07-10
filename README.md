@@ -22,17 +22,45 @@ Un sitio web responsivo para una empresa de ventas online , desarrollado con met
 ## 📁 Estructura del Proyecto
 
 ```
-/
-├── index.html             # Archivo HTML principal
-├── aboutus.html           # Página de información
+Modelo 3 ABPRO3/
 ├── assets/
 │   ├── css/   
 │   │   └── style.css      # Archivo de estilos
-│   ├── img/               # Imágenes del proyecto
-│   ├── js/                # Scripts JavaScript
+│   ├── images/            # Imágenes del proyecto
+│   ├── scripts/           
+│   │   └── script.js      # Scripts JavaScript
 │   └── scss/              # Archivos SCSS 
-|       ├── style.scss     # Archivo principal SCSS 
-│    
+│       ├── abstracts/
+│       │   ├── _variables.scss
+│       │   ├── _mixins.scss
+│       │   ├── _functions.scss
+│       │   └── _colors.scss
+│       ├── base/
+│       │   ├── base.scss
+│       │   ├── _reset.scss
+│       │   └── _typography.scss
+│       ├── components/
+│       │   ├── _buttons.scss
+│       │   ├── _cards.scss
+│       │   └── form.scss
+│       ├── layout/
+│       │   ├── _header.scss
+│       │   ├── _hero.scss
+│       │   └── _footer.scss
+│       ├── pages/
+│       │   ├── _contact.scss
+│       │   ├── _catalog.scss
+│       │   └── _home.scss
+│       ├── themes/
+│       │   └── _theme.scss
+│       ├── vendors/
+│       │   └── _bootstrap.scss
+|       ├── style.scss     
+|       └── main.scss      # Archivo principal SCSS
+├── index.html             # Archivo HTML principal
+├── aboutus.html           # Página de información
+├── catalog.html           # Catálogo de productos     
+├── contact.html           # Página de contacto
 └── README.md              # Este archivo
 ```
 
@@ -72,9 +100,8 @@ Un sitio web responsivo para una empresa de ventas online , desarrollado con met
 --color-white: #FFFFFF;      /* Blanco */
 ```
 
-
 ### Tipografía
-- **Headings**: 'Playfair Display', serif
+- **Headings**: Tahoma
 - **Body**: 'Montserrat', sans-serif
 
 ## 📱 Breakpoints Responsivos
