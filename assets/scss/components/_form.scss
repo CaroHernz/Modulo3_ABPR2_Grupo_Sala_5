@@ -1,0 +1,54 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+@use '../base/base' as *;
+
+
+.form {
+    background-color: $color-light;
+    padding: 3rem;
+    color: $color-text;
+    text-align: center;
+    flex-direction: column;
+    @include flex-center;
+}
+
+.form__title {
+    font-family: $fuente-logo;
+    font-size: 1.1rem;
+    background: $color-white;
+    border-radius: 50px;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    width: 500px;
+}
+.form__subtitle {
+    width: 500px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: right;
+    color: $color-white;
+    padding-top: 10px;
+}
+
+.form__content {
+    color: $color-text;
+    background-color: $color-secondary;
+    padding: 3em 8em;
+    margin: 2em 0;
+    border-radius: 45px;
+    box-shadow: 2px 2px 2px 1px $color-dark;
+}
+
+
+.form__input, .form__textarea, .form__button {
+    border: none;
+    border-radius: 5px;
+    padding: 0.9em;
+    margin: 0.3em;
+}
+
+.form__button:hover{
+    color: $color-white;
+    background-color: $color-accent;
+}
