@@ -23,12 +23,14 @@ footer {
 }
 
 .nav {
+  position: fixed;
   display: flex;
   flex-direction: row;
   background-color: #27AFC9;
   align-items: center;
   justify-content: space-between;
   padding: 0 1rem;
+  width: 100%;
 }
 
 .header__logo img {
