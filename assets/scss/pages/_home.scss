@@ -11,8 +11,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.news__title {
+
+&__title {
     font-family: $fuente-logo;
     font-size: 1.1rem;
     background: $color-white;
@@ -22,10 +22,11 @@
     line-height: 0;
     width: 500px;
 }
-.news__content ul{
+&__content ul{
     font-family: $fuente-base;
     list-style: none;
     text-align: left;
     line-height: 2;
     font-size: 1rem;
+}
 }

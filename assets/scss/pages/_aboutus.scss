@@ -9,8 +9,9 @@
     text-align: center;
     flex-direction: column;
     @include flex-center;
-}
-.about__title {
+    
+
+    &__title {
     font-family: $fuente-logo;
     font-size: 1.1rem;
     background: $color-white;
@@ -20,34 +21,37 @@
     line-height: 0;
     width: 500px;
 }
-.about__subtitle {
+    &__subtitle {
     width: 500px;
     font-weight: bold;
     font-style: italic;
     text-align: right;
     color: $color-white;
 }
-.about__content {
+    &__content {
     color: $color-text;
+    max-width: 800px;
+
 }
-.about__content h3{
+    &__content h3{
     font-family: $fuente-logo;
     text-align: left;    
 }
-.about__content ul{
+    &__content ul{
     font-family: $fuente-base;
     list-style: none;
     text-align: left;
     line-height: 1.5;
     font-size: 1rem;
 }
-.about__team h3 {
+    &__team h3 {
     font-family: $fuente-logo;
 }
-.about__team ul{
+    &__team ul{
     font-family: $fuente-base;
     list-style: none;
     text-align: left;
     line-height: 2;
     font-size: 1rem;
+}
 }

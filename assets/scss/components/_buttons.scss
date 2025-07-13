@@ -1,0 +1,29 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+@use '../base/base' as *;
+
+button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.product-card__btn {
+    background-color: $color-secondary;
+    color: $color-white;
+    border-radius: 20px;
+    border: none;
+    padding: 0.5rem 1rem;
+    box-shadow: $shadow;
+    &:hover {
+    transform: scale(1.1);
+}}
+
+.form__button {
+    border: none;
+    border-radius: 20px;
+    padding: 0.7rem 1rem;
+    margin: 0.3em;
+    box-shadow: $shadow;
+    &:hover{
+    color: $color-white;
+    background-color: $color-accent;
+}}
