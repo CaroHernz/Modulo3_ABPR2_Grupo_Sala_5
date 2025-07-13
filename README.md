@@ -34,20 +34,20 @@ Modelo 3 ABPRO3/
 │       │   ├── _variables.scss
 │       │   ├── _mixins.scss
 │       │   ├── _functions.scss
-│       │   └── _colors.scss
 │       ├── base/
-│       │   ├── base.scss
+│       │   ├── _base.scss
 │       │   ├── _reset.scss
 │       │   └── _typography.scss
 │       ├── components/
 │       │   ├── _buttons.scss
 │       │   ├── _cards.scss
-│       │   └── form.scss
+│       │   └── _form.scss
 │       ├── layout/
 │       │   ├── _header.scss
 │       │   ├── _hero.scss
 │       │   └── _footer.scss
 │       ├── pages/
+│       │   ├── _aboutus.scss
 │       │   ├── _contact.scss
 │       │   ├── _catalog.scss
 │       │   └── _home.scss
@@ -55,7 +55,6 @@ Modelo 3 ABPRO3/
 │       │   └── _theme.scss
 │       ├── vendors/
 │       │   └── _bootstrap.scss
-|       ├── style.scss     
 |       └── main.scss      # Archivo principal SCSS
 ├── index.html             # Archivo HTML principal
 ├── aboutus.html           # Página de información
