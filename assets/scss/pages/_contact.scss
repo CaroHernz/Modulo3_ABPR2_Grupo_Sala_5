@@ -2,10 +2,12 @@
 @use '../abstracts/mixins' as *;
 @use '../base/base' as *;
 
-.contact__container {
+.contact {
+    &__container {
     background-color: $color-secondary;
+
 }
-.contact__content {
+    &__content {
     display: flex;
     flex-direction: row;
     color: $color-white;
@@ -14,16 +16,16 @@
     text-align: center;
     align-items: center;
 }
-.contact__title {
+    &__title {
     background-color: $color-white;
     padding: 0.2rem 2rem;
     border-radius: 50px;
 }
-.contact__title h2{
+    &__title h2{
     font-family: $fuente-logo;
     color: $color-secondary;
 }
-.contact__content a{
+    &__content a{
     text-decoration: none;
     color: $color-text;
     background-color: $color-accent;
@@ -31,7 +33,7 @@
     padding: 1rem;
     font-weight: bold;
 }
-
+}
 
 
 @media (max-width: 768px) {

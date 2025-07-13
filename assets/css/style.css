@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  width: 100%;
+  width: 100vw;
 }
 
 main {
@@ -31,13 +31,8 @@ footer {
   justify-content: space-between;
   padding: 0 1rem;
   width: 100%;
+  box-sizing: border-box;
 }
-
-.header__logo img {
-  width: 60px;
-  height: auto;
-}
-
 .nav__list {
   display: flex;
   flex-direction: row;
@@ -46,20 +41,16 @@ footer {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
 }
-
 .nav__item a {
   text-decoration: none;
   color: #FFFFFF;
 }
-
 .nav__item a:hover {
   text-decoration: underline;
 }
-
 .nav__item a.active {
   text-decoration: underline;
 }
-
 .nav__toggle {
   background-color: #B0A6A5;
   width: 2rem;
@@ -70,12 +61,19 @@ footer {
   cursor: pointer;
 }
 
+.header__logo img {
+  width: 60px;
+  height: auto;
+}
+
 .hero {
   background-color: #27AFC9;
   padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 .hero__content {
   display: flex;
@@ -106,8 +104,9 @@ footer {
   background: #333;
   color: #FFFFFF;
   padding: 0.5rem 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
-
 .footer__wrapper {
   display: flex;
   flex-direction: row;
@@ -123,7 +122,6 @@ footer {
     text-align: center;
   }
 }
-
 .footer__container {
   font-family: Tahoma;
   text-align: center;
@@ -131,7 +129,6 @@ footer {
   line-height: 0.3;
   color: #27AFC9;
 }
-
 .footer__social {
   display: flex;
   justify-content: flex-end;
@@ -146,7 +143,6 @@ footer {
     margin-top: 0.5rem;
   }
 }
-
 .footer__link {
   display: inline-flex;
   align-items: center;
@@ -200,6 +196,35 @@ footer {
   background-image: url('data:image/svg+xml;utf8,<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85v5.5H9.47V9h3.41v1.56h.05c.48-.91 1.66-1.87 3.42-1.87 3.66 0 4.34 2.41 4.34 5.55v6.21zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.23 0z"/></svg>');
 }
 
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.product-card__btn {
+  background-color: #27AFC9;
+  color: #FFFFFF;
+  border-radius: 20px;
+  border: none;
+  padding: 0.5rem 1rem;
+  box-shadow: 1px 2px 5px #6D5C55;
+}
+.product-card__btn:hover {
+  transform: scale(1.1);
+}
+
+.form__button {
+  border: none;
+  border-radius: 20px;
+  padding: 0.7rem 1rem;
+  margin: 0.3em;
+  box-shadow: 1px 2px 5px #6D5C55;
+}
+.form__button:hover {
+  color: #FFFFFF;
+  background-color: #FFBB02;
+}
+
 .products {
   background-color: #B0A6A5;
   padding: 0.5rem 1rem;
@@ -210,7 +235,6 @@ footer {
   align-items: center;
   flex-direction: column;
 }
-
 .products__title {
   font-family: Tahoma;
   font-size: 1.1rem;
@@ -221,7 +245,6 @@ footer {
   line-height: 0;
   width: 500px;
 }
-
 .products__container {
   display: flex;
   flex-direction: row;
@@ -241,78 +264,43 @@ footer {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   display: none;
 }
-
 .product-card.active {
   display: block;
 }
-
 .product-card:hover {
   transform: scale(1.03);
 }
-
 .product-card__img {
   width: 100%;
   border-radius: 5px;
 }
-
 .product-card__info {
   font-family: "Montserrat", sans-serif;
   color: #333;
 }
-
 .product-card__title {
   font-family: Tahoma;
   font-size: 1.1rem;
 }
-
 .product-card__desc {
   text-align: justify;
   font-size: 0.9rem;
 }
-
 .product-card__price {
   font-size: 1.1rem;
   font-weight: bolder;
   color: #E58E00;
 }
 
-.product-card__btn {
-  background-color: #27AFC9;
-  color: #FFFFFF;
-  border-radius: 20px;
-  border: none;
-  padding: 0.5rem 1rem;
-  box-shadow: 1px 2px 5px #6D5C55;
-  cursor: pointer;
-}
-
-.product-card__btn:hover {
-  transform: scale(1.1);
-}
-
-.products__container {
-  flex-wrap: wrap;
-}
-
-.product-card {
-  display: none;
-}
-
-.product-card.active {
-  display: block;
-}
-
 @media (max-width: 768px) {
   .products__container {
     flex-direction: column;
-    width: 100%;
   }
   .catalog__container {
     flex-direction: column;
-    width: 100%;
   }
   .product-card {
-    width: 100%;
+    width: 450px;
   }
   .product-card__img {
     height: 200px;
@@ -329,7 +317,6 @@ footer {
   justify-content: center;
   align-items: center;
 }
-
 .form__title {
   font-family: Tahoma;
   font-size: 1.1rem;
@@ -340,7 +327,6 @@ footer {
   line-height: 0;
   width: 500px;
 }
-
 .form__subtitle {
   width: 500px;
   font-weight: bold;
@@ -349,7 +335,6 @@ footer {
   color: #FFFFFF;
   padding-top: 10px;
 }
-
 .form__content {
   color: #333;
   background-color: #27AFC9;
@@ -358,17 +343,11 @@ footer {
   border-radius: 45px;
   box-shadow: 2px 2px 2px 1px #6D5C55;
 }
-
-.form__input, .form__textarea, .form__button {
+.form__input, .form .form__textarea {
   border: none;
   border-radius: 5px;
   padding: 0.9em;
   margin: 0.3em;
-}
-
-.form__button:hover {
-  color: #FFFFFF;
-  background-color: #FFBB02;
 }
 
 .about {
@@ -381,7 +360,6 @@ footer {
   justify-content: center;
   align-items: center;
 }
-
 .about__title {
   font-family: Tahoma;
   font-size: 1.1rem;
@@ -392,7 +370,6 @@ footer {
   line-height: 0;
   width: 500px;
 }
-
 .about__subtitle {
   width: 500px;
   font-weight: bold;
@@ -400,16 +377,14 @@ footer {
   text-align: right;
   color: #FFFFFF;
 }
-
 .about__content {
   color: #333;
+  max-width: 800px;
 }
-
 .about__content h3 {
   font-family: Tahoma;
   text-align: left;
 }
-
 .about__content ul {
   font-family: "Montserrat", sans-serif;
   list-style: none;
@@ -417,11 +392,9 @@ footer {
   line-height: 1.5;
   font-size: 1rem;
 }
-
 .about__team h3 {
   font-family: Tahoma;
 }
-
 .about__team ul {
   font-family: "Montserrat", sans-serif;
   list-style: none;
@@ -433,7 +406,6 @@ footer {
 .contact__container {
   background-color: #27AFC9;
 }
-
 .contact__content {
   display: flex;
   flex-direction: row;
@@ -443,18 +415,15 @@ footer {
   text-align: center;
   align-items: center;
 }
-
 .contact__title {
   background-color: #FFFFFF;
   padding: 0.2rem 2rem;
   border-radius: 50px;
 }
-
 .contact__title h2 {
   font-family: Tahoma;
   color: #27AFC9;
 }
-
 .contact__content a {
   text-decoration: none;
   color: #333;
@@ -469,11 +438,6 @@ footer {
     display: none;
   }
 }
-.catalog__filter-btn--active {
-  background-color: #27AFC9;
-  color: white;
-}
-
 .catalog {
   background-color: #B0A6A5;
   padding: 0.5rem 1rem;
@@ -484,15 +448,12 @@ footer {
   justify-content: center;
   align-items: center;
 }
-
 .catalog__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 800px;
   gap: 1rem;
 }
-
 .catalog__title {
   font-family: Tahoma;
   font-size: 1.1rem;
@@ -502,11 +463,9 @@ footer {
   margin: 0;
   line-height: 0;
 }
-
 .catalog__filter {
   gap: 2rem;
 }
-
 .catalog__filter-btn {
   background-color: #FFFFFF;
   font-family: "Montserrat", sans-serif;
@@ -519,7 +478,10 @@ footer {
   box-shadow: 1px 2px 5px #6D5C55;
   cursor: pointer;
 }
-
+.catalog__filter-btn--active {
+  background-color: #27AFC9;
+  color: white;
+}
 .catalog__filter-btn:hover {
   background-color: #FFBB02;
   color: #6D5C55;
@@ -535,7 +497,6 @@ footer {
   justify-content: center;
   align-items: center;
 }
-
 .news__title {
   font-family: Tahoma;
   font-size: 1.1rem;
@@ -546,7 +507,6 @@ footer {
   line-height: 0;
   width: 500px;
 }
-
 .news__content ul {
   font-family: "Montserrat", sans-serif;
   list-style: none;

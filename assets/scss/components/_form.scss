@@ -10,9 +10,8 @@
     text-align: center;
     flex-direction: column;
     @include flex-center;
-}
-
-.form__title {
+    
+    &__title {
     font-family: $fuente-logo;
     font-size: 1.1rem;
     background: $color-white;
@@ -21,17 +20,17 @@
     margin: 0;
     line-height: 0;
     width: 500px;
-}
-.form__subtitle {
+    }
+    &__subtitle {
     width: 500px;
     font-weight: bold;
     font-style: italic;
     text-align: right;
     color: $color-white;
     padding-top: 10px;
-}
+    }
 
-.form__content {
+    &__content {
     color: $color-text;
     background-color: $color-secondary;
     padding: 3em 8em;
@@ -41,14 +40,10 @@
 }
 
 
-.form__input, .form__textarea, .form__button {
+    &__input, .form__textarea {
     border: none;
     border-radius: 5px;
     padding: 0.9em;
     margin: 0.3em;
-}
-
-.form__button:hover{
-    color: $color-white;
-    background-color: $color-accent;
+    }
 }

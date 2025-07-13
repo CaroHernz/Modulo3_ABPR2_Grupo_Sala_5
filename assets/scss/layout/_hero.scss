@@ -6,6 +6,9 @@
     background-color: $color-secondary;
     padding: 2rem;
     @include flex-center;
+    width: 100%;
+    box-sizing: border-box;
+
     
     &__content {
         display: flex;
@@ -13,11 +16,13 @@
         align-items: center;
         justify-content: center;
         max-width: 700px;
+        
     }
     &__image {
         width: 300px;
         object-fit:cover;
         border-radius: 50%;
+
     }
     &__title {
         font-family: $fuente-logo;
